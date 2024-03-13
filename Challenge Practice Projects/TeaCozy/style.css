@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 69px;
+    z-index: 100;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+img {
+    height: 50px;
+    padding-left: 10px;    
+}
+
+ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+li {
+    list-style: none;
+    padding: 0 10px;
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    top: 70px;
+}
+
+.hero img {
+    height: 700px;
+    width: auto;
+}
+
+
+
