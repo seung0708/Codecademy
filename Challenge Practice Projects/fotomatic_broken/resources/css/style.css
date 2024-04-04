@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .main-content {
@@ -41,22 +42,26 @@ html, body {
 /* Header */
 
 header {
+  display: flex;
   position: fixed;  
   width: 100%;
   height: 85px;
-  z-index: 100;
+  z-index: 1;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
 
 header .content {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   padding: 0 1.875rem;
 }
 
 header .logo {
+  text-decoration: none;
   flex: 1;
 }
 
@@ -130,6 +135,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  margin-bottom: 4rem;
 }
 
 #sign-up-cta {
@@ -233,10 +239,16 @@ header .mobile {
 }
 
 .feature {
+  height: 39.6875rem;
   flex: 1;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+}
+
+.feature .content {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .feature .image-container {
@@ -245,8 +257,15 @@ header .mobile {
   margin: 0 auto;
 }
 
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
 .feature h2 {
-  padding-bottom: .5rem;
+  margin-bottom: 0;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
@@ -257,6 +276,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 890px) {
@@ -297,9 +317,11 @@ header .mobile {
 }
 
 #filters-section .content h2 {
+  font-family: "Roboto";
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  margin-bottom: 0;
 }
 
 #filters-section .content h3 {
@@ -310,6 +332,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -351,6 +374,7 @@ header .mobile {
 }
 
 #quotes-section content {
+  display: flex;
   padding: 5rem 0;
 }
 
