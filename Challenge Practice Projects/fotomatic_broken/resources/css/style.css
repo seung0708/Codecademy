@@ -8,13 +8,15 @@ html, body {
 
 .main-content {
   background-image: url('../images/banner-landingpage.jpg');
+  background-size: contain;
+  /* background-repeat: no-repeat; */
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
 .center {
   text-align: center;
-}
+} 
 
 .button {
   border-radius: 4px;
@@ -41,6 +43,7 @@ html, body {
 header {
   position: fixed;  
   width: 100%;
+  height: 85px;
   z-index: 100;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
@@ -50,7 +53,7 @@ header .content {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 1.875rem;
+  padding: 0 1.875rem;
 }
 
 header .logo {
@@ -119,6 +122,10 @@ header .mobile {
 /* Sign Up Section */
 
 #sign-up-section {
+  position: relative;
+  top: 170px;
+  left: 100px;
+  padding: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -159,6 +166,7 @@ header .mobile {
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
+  font-size: 3.125rem;
   padding-bottom: .75rem;
 }
 
@@ -187,7 +195,9 @@ header .mobile {
   }
 
   #sign-up-cta .email {
+    font-family: "Roboto", sans-serif;
     display: none;
+
   }
 
   #sign-up-cta h1 {
