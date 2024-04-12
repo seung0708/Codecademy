@@ -1,0 +1,92 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Open Sans";
+    font-size: 16px;
+    
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 2rem;
+    border-bottom: 1px solid #b4b4b4;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#logo {
+    width: 3rem;
+    height: auto;
+}
+
+.navbar_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3rem;
+}
+
+.navbar_1, .navbar_2 {
+    display: flex;
+    list-style-type: none;   
+}
+
+.navbar_1 li, .navbar_2 li {
+    display: inline-block;
+    padding: 0.875rem;
+}
+
+
+/* Main */
+
+.jumbotron {
+    background-image: url('./images/starbucks_storefront.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.jumbotron .content {
+    position: relative;
+    left: 10rem;
+    top: 18rem;
+    width: 580px;
+    height: 320px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #00704a;
+    
+}
+
+.jumbotron .content p {
+    width: 80%;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 3.5rem;
+}
+
+.menu_items{
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: 15rem;
+}
+
+.menu_items img {
+    height: 14rem;
+}
+
+
