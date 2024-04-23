@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body {
+}
+
 header {
     display: flex;
     align-items: center;
@@ -46,5 +49,71 @@ header {
     padding-right: 16px;
 }
 
+/* Hero */
 
+#hero {
+    width: 100%;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    padding: 32px 24px;
+}
 
+#hero #banner {
+    width: 60%;
+    height: auto;
+    margin-right: 24px;
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    width: 30%;
+    justify-content: center;
+}
+
+.hero_text h1 {
+    font-size: 55px;
+    margin-bottom: 32px;
+}
+
+.hero_text h2 {
+    margin-bottom: 32px;
+    width: 60%;
+}
+
+.hero_text button {
+    font-size: 16px;
+    width: 80%;
+    background-color: #a9a9a9;
+    padding: 8px 0;
+}
+
+/* Info sectioni */
+#info {
+    border: 1px solid black;
+    display: flex;
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.info_container {
+    margin-left: 24px;
+    width: 40%;
+    border-left: 1px solid gray;
+}
+
+.info_details {
+    display: flex;
+    padding: 16px;
+}
+
+.info_details img {
+    margin-right: 16px;
+}
+
+.info_text {
+    border: 1px solid black;
+    width: 60%;
+}
