@@ -17,6 +17,10 @@ h1, h2, h3 {
     color: #404040;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 p {
     color: #696969;
 }
@@ -130,13 +134,16 @@ header {
 }
 
 #info .practice_text h2 {
-    font-size: 40px;
+    
     padding-bottom: 24px;
 }
 
 #info .practice_text p {
-
     font-size: 22px;
+    padding-bottom: 32px;
+}
+#info .practice_text span {
+    padding-bottom: 32px;
 }
 
 #info .info_container {
@@ -169,4 +176,41 @@ header {
 }
 
 
+/* Learning Section */
 
+#learning {
+    background-color: lightgrey;
+    padding: 32px 72px;
+}
+
+#learning h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#learning .learning-cards {
+    display: grid;
+    justify-items: center;
+    row-gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+#learning .learning-cards .cards {
+    background-color: white;
+}
+
+#learning .learning-cards .cards .cards_content {
+    padding: 16px;
+    
+}
+
+#learning .learning-cards .cards .cards_content h3 {
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+#learning .learning-cards .cards .cards_content p {
+    padding: 8px 0;
+    font-size: 20px;
+}
