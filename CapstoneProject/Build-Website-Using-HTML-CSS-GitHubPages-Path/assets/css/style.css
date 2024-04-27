@@ -113,13 +113,22 @@ header {
     padding: 8px 0;
 }
 
+
+
+
+.container > h2 {
+    text-align: center;
+    padding: 32px 0;
+}
+
 /* Info sectioni */
-#info {
+.info {
     display: grid;
     grid-template-columns: 60% 40%;
 }
 
-#info .practice img {
+
+.info .info_container1 img{
     width: 100%;
     padding-left: 24px;
     padding-top: 32px;
@@ -127,51 +136,60 @@ header {
     padding-bottom: 32px;
 }
 
-#info .practice_text {
+.info_container1 video  {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0px;
+    padding-bottom: 32px;
+}
+
+
+.info .container1_text {
     width: 77%;
     padding-left: 24px;
     padding-bottom: 32px;
 }
 
-#info .practice_text h2 {
+.info .container1_text h2 {
     
     padding-bottom: 24px;
 }
 
-#info .practice_text p {
+.info .container1_text p {
     font-size: 22px;
     padding-bottom: 32px;
 }
-#info .practice_text span {
+.info .container1_text span {
     padding-bottom: 32px;
 }
 
-#info .info_container {
+.info .info_container2 {
     border-left: 1px solid lightgray;
 }
 
-#info .info_container .info_details {
+.info .info_container2 .info_details {
     display: flex;
 }
 
-#info .info_container .info_details img {
+.info .info_container2 .info_details img {
     width: 35%;
     height: auto;
     padding: 16px;
 
 }
 
-#info .info_container .info_details .info_text {
+.info .info_container2 .info_details .info_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#info .info_container .info_details h3, #info .info_container .info_details p {
+.info .info_container2 .info_details h3, #info .info_container .info_details p {
     padding-bottom: 8px;
 }
 
-#info .info_container .detail3 {
+.info .info_container2 .detail3 {
     background-color: lightgray;
 }
 
@@ -213,4 +231,16 @@ header {
 #learning .learning-cards .cards .cards_content p {
     padding: 8px 0;
     font-size: 20px;
+}
+
+footer {
+    border-top: 1px solid lightgray;
+    padding-left: 24px;
+}
+
+footer .tp {
+    display: flex;
+    justify-content: end;
+    
+
 }
