@@ -5,8 +5,7 @@
 
 //1. Get the user's name
 const prompt = require('prompt-sync')({sigint: true});
-const name = prompt("What is your name?");
-
+const name = prompt("What is your name? ");
 //2. Generate a random number
 const generateRandomNumber = num => {
     return Math.floor(Math.random() * num);
@@ -25,11 +24,21 @@ const quotes = [
 ]
 
 const length = quotes.length;
-const index = generateRandomNumber(length); 
-
+let index = generateRandomNumber(length);
 //3. Generate personal message 
 const peronsalMessage = (randomIndex, userName) => {
     console.log(`${userName}, ${quotes[randomIndex]}`);
 }
 
-peronsalMessage(name, index);
+peronsalMessage(index, name);
+
+//4. Ask for more quotes
+let answer = prompt("Would like to read more? ");
+
+while (answer === "yes") {
+    index = generateRandomNumber(length);
+    peronsalMessage(index, name);
+    answer = prompt("Would like to read more? ");
+}
+
+
