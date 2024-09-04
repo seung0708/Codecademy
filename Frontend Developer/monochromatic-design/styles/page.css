@@ -1,4 +1,4 @@
-page-hero-header {
+.page-hero-header {
   background-color: #627FB0; 
   background-image: url('images/saturn-background.svg');
   background-position: center;
@@ -18,13 +18,13 @@ page-hero-header {
 }
 .main-content-benefits {
   padding: 80px 0;
-  background-color: #F3F3F3;
+  background-color: #F5F9FF;
 }
 .main-content-benefits h2 {
-  color: #9B9B9B;
+  color: #0D1C32;
 }
 .main-content-info {
-  background-color: #BFBFBF;
+  background-color: #627FB0;
   text-align: center;
 }
 .main-content-info-left {
@@ -43,7 +43,7 @@ page-hero-header {
   text-align: center;
 }
 .main-content-cta {
-  background-color: #3C3C3C;
+  background-color: #0D1C32;
   color: #FFFFFF;
   padding: 80px 0;
 }
@@ -59,6 +59,8 @@ page-hero-header {
   position: absolute;
   right: 10px;
   top: 7px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border: none;
 }
 
