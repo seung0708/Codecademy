@@ -1,0 +1,38 @@
+button {
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  .button {
+    border-radius: 100px;
+    display: inline-block;
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+  }
+  .button:hover {
+    opacity: 0.75;
+  }
+  .button-primary {
+    background-color: #0D1C32;
+    color: #FFFFFF;
+  }
+  .button-secondary {
+    background-color: #627FB0;
+    color: #FFFFFF;
+  }
+  input {
+    border-radius: 100px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    transition: border-color 0.5s ease;
+    width: 100%;
+  }

@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.mobile-hide {
+  display: none;
+}
+.mobile-show {
+  display: block;
+}
+@media(min-width: 720px) {
+  .mobile-hide {
+    display: block;
+  }
+
+  .mobile-show {
+    display: none;
+  }
+}

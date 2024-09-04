@@ -1,0 +1,6 @@
+@import url('./styles/global.css');
+@import url('./styles/typography.css');
+@import url('./styles/structure.css');
+@import url('./styles/module.css');
+@import url('./styles/component.css');
+@import url('./styles/page.css')

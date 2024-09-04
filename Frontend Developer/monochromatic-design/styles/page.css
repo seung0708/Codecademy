@@ -1,0 +1,120 @@
+page-hero-header {
+  background-color: #627FB0; 
+  background-image: url('images/saturn-background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 600px;
+  overflow: hidden;
+}
+.page-hero-header-left, .page-hero-header-right {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.page-hero-header-left {
+  padding: 0px 40px;
+  color: #FFFFFF;
+}
+.main-content-benefits {
+  padding: 80px 0;
+  background-color: #F3F3F3;
+}
+.main-content-benefits h2 {
+  color: #9B9B9B;
+}
+.main-content-info {
+  background-color: #BFBFBF;
+  text-align: center;
+}
+.main-content-info-left {
+  max-height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.main-content-info-right {
+  padding: 60px;
+  color: #FFFFFF;
+  width: 100%;
+}
+.main-content-cta-left, .main-content-cta-right {
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+.main-content-cta {
+  background-color: #3C3C3C;
+  color: #FFFFFF;
+  padding: 80px 0;
+}
+.cta-container {
+  position: relative;
+}
+.cta-container input {
+  width: 100%;
+  padding: 23px 30px;
+  font-size: 1em;
+}
+.cta-container button {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  border: none;
+}
+
+/* Items */
+.item {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 0 2%;
+  text-align: center;
+}
+.item .item-image {
+  background: #FFFFFF;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.05);
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+}
+@media(min-width: 720px) {
+  .page-hero-header-left, .page-hero-header-right {
+    width: 50%;
+    text-align: left;
+    float: left;
+  }
+  .page-hero-header-left {
+    padding: 80px;
+  }
+  .page-hero-header-left p {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 20px;
+  }
+  .main-content-info {
+    background-image: url('images/space-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size:50%;
+    text-align: left;
+  }
+  .main-content-info-right {
+    padding: 80px;
+    width: 50%;
+    float: right;
+  }
+  .main-content-cta-left, .main-content-cta-right {
+    width: 50%;
+    float: left;
+    padding: 0 30px;
+    text-align: left;
+  }
+  .item {
+    float: left;
+    margin-bottom: 0;
+    width: calc(95%/3);
+  }
+
+  .item:not(:last-child) {
+    margin-right: 2.5%;
+  }
+}
