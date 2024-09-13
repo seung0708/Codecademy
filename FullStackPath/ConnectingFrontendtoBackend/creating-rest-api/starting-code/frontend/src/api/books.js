@@ -1,8 +1,11 @@
 // TODO: Import API_ENDPOINT
 import {API_ENDPOINT} from './index.js';
+
 // TODO: Create the addNewBook function that takes in newTitle, newStart, and newEnd as arguments. Inside the function, create a POST request for the new book. Store the response as a JSON in a variable called newBook and return it at the end of the function.
+
 export const addNewBook = async (newTitle, newStart, newEnd) => {
-    //POST request for the new book stored inside response
+    //the right side is the POST request. 
+    //when the server receives the POST request, the server sends the response which is saved into response variable. 
     const response = await fetch(`${API_ENDPOINT}/books`, {
         method: 'POST',
         body: JSON.stringify({
@@ -10,11 +13,11 @@ export const addNewBook = async (newTitle, newStart, newEnd) => {
             start: newStart,
             end: newEnd
         }),
-        headers: {
+        headers: { 
             'Content-Type': "application/json"
         }
     });
-    //newBook is waiting for the response
+    //newBook is waiting for the response to be converted into JSON. 
     const newBook = await response.json();
     return newBook;
 };
